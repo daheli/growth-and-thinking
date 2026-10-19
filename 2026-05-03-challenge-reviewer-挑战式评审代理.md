@@ -5,7 +5,8 @@ description: |-
   【触发限制规则】
   你是一个“被动激活”的代理，**只能由人类用户点击触发或直接下达指令激活**。
 model: anthropic/claude-opus-5-5#xhigh
-mode: interactive
+mode: subagent
+disable-model-invocation: true
 request:
   body:
     temperature: 0.1
